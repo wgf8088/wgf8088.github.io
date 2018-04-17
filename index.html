@@ -3,52 +3,60 @@
 	<head>    <!-- 文档元信息 --> 
 		<meta charset = "utf-8" >    <!-- 定义字符集编码 -->
 		<title>supang|supangseiko</title>   <!-- 标题 -->
+		<link rel="stylesheet" href="css/normalize.css">  <!-- 定义样式表 -->
+		<link href="https://fonts.googleapis.com/css?family=Changa+One:400,400i|Open+Sans:400,400i,700,700i,800" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>        <!-- 文档正文 --> 
 	<header>     <!--  -->
-		<a href="index.html">      <!-- 锚定 超链接 -->    
+		<a href="index.html" id="logo">      <!-- 锚定 超链接   命名id -->    
 			<h1>I LOVE SUPANG </h1>  <!-- 标题1 -->
 			<h2>Easy And Happy To Learn</h2>
 		</a>
 		<nav>  <!-- 导航 -->
 			<ul>   <!--无序列表ul  有序列表ol  -->
-				<li><a href="index.html">Vedio</a></li>   <!-- 列表项 -->
+				<li><a href="index.html" class="selected">Vedio</a></li>   <!-- 列表项,class和id类似，class同页面可重复使用，id必须唯一 -->
 				<li><a href="about.html">About</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
-	<section>     <!-- 这里是画册 -->
-		<ul>
-			<li>
-				<a href="img/numbers-01.jpg">
-					<img src="img/numbers-01.jpg" alt="">  <!-- alt图片描述 -->
-					<p>C++</p>
-				</a>
-			</li>
-			<li>
-				<a href="img/numbers-06.jpg">
-					<img src="img/numbers-06.jpg" alt="">
-					<p>Python</p>
-				</a>
-			</li>
-			<li>
-				<a href="img/numbers-09.jpg">
-					<img src="img/numbers-09.jpg" alt="">
-					<p>PHP</p>
-				</a>
-			</li>
-			<li>
-				<a href="img/numbers-12.jpg">
-					<img src="img/numbers-12.jpg" alt="">
-					<p>Java</p>
-				</a>
-			</li>
-		</ul>  
-	</section>
-	<footer>     <!--  -->
-		<p>&copy; 2017 SUPANG</p>   <!-- html字符实体 --> <!-- 段落元素 -->
-	</footer>
+	<div id="wrapper">    <!-- div封装，id名称 -->
+		<section>     <!-- 这里是画册 -->
+			<ul id="gallery">
+				<li>
+					<a href="img/numbers-01.jpg">
+						<img src="img/numbers-01.jpg" alt="">  <!-- alt图片描述 -->
+						<p>C++</p>
+					</a>
+				</li>
+				<li>
+					<a href="img/numbers-06.jpg">
+						<img src="img/numbers-06.jpg" alt="">
+						<p>Python</p>
+					</a>
+				</li>
+				<li>
+					<a href="img/numbers-09.jpg">
+						<img src="img/numbers-09.jpg" alt="">
+						<p>PHP</p>
+					</a>
+				</li>
+				<li>
+					<a href="img/numbers-12.jpg">
+						<img src="img/numbers-12.jpg" alt="">
+						<p>Java</p>
+					</a>
+				</li>
+			</ul>  
+		</section>
+	
+		<footer>     <!--  -->
+			<a href="http://twitter.com"><img src="img/twitter-wrap.png" alt="Twitter logo" class="social-icon"></a>
+			<a href="http://facebook.com"><img src="img/facebook-wrap.png" alt="Facebook logo" class="social-icon"></a>
+			<p>&copy; 2017 SUPANG</p>   <!-- html字符实体 --> <!-- 段落元素 -->
+		</footer>
+	</div>
 	</body>
 </html>
 

@@ -1,0 +1,186 @@
+/* **************************************
+16进制颜色说明
+************************************** */
+/* 
+0 1 2 3 4 5 6 7 8 9 a   b   c   d   e   f
+                    10  11  12  13  14  15
+					
+#6a   b4   7b
+ R     G    B
+红色 绿色 蓝色
+RGB ( red，green，blue )   16*16=256
+
+000000黑色   888888 灰色     999999银灰色    cccccc  银色     ffffff  白色     f5f5f5  灰色
+
+ */
+
+/* **************************************
+google在线字体
+https://fonts.google.com/
+Changa One     Open Sans
+<link href="https://fonts.googleapis.com/css?family=Changa+One:400,400i|Open+Sans:400,400i,700,700i,800" rel="stylesheet">
+<link href='http://fonts.font.im/css?family=Changa+One:400,400italic|Open+Sans:400,300,600,700,800,300italic,400italic,600italic,700italic,800italic&subset=latin,greek,greek-ext,vietnamese,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+************************************** */
+
+
+/* **************************************
+GENERAL 通用
+************************************** */
+
+body{
+	font-family:'opwn sans',sans-serif;
+}
+
+
+#wrapper{              /* 定位div元素 */ 
+	max-width:940px;    /* 元素最大宽度 */ 
+	margin:0 auto;       /* 元素的边距，0上下边距，auto自动,填充左右的空间 */ 
+	/* background:orange;    /* 元素背景色 */ 
+	padding:0 5%          /* 填充，0是上下，5%是左右 */
+}
+
+a {
+	text-decoration:none;        /* 删除链接下划线,none无 */ 
+}
+
+img{
+	max-width:100%;
+}
+
+/* **************************************
+HEADING  头部
+************************************** */
+
+header{
+	float:left;
+	margin:0 0 30px 0;		 /* 顶部 右  底部 左；从顶部开始顺时针转 */
+	padding:5px 0 0 0;
+	width:100%;
+}
+
+
+#logo{			/* 调用id */
+	text-align:center;   /* 文本居中 */
+	margin:0;            /* 上下左右边距为0 */
+}
+h1{
+	font-family:'changa one',sans-serif;        /* 设置字体样式 */
+	margin:15px 0;                      /* 设置字体边距 */
+	font-size:1.75em;           /* 设置字体大小，1em等于浏览器默认字体大小，相当于16px；会随浏览器缩放大小 */
+	font-weight:normal;			 /* 设置字体重量，normal */
+	line-height:0.8em;			 /* 设置行高 */
+}
+
+h2{
+	font-size:0.75em;
+	margin:-5px 0 0;		/* 设置字体边距,-5顶部边距会变小，上下，左右 */
+	font-weight:normal;
+}
+
+/* **************************************
+NAVGATION   导航
+************************************** */
+
+nav{
+	text-align:center;
+	padding:10px 0;			 /* 填充 上下 左右 */
+	margin:20px 0 0;
+}
+
+nav ul{
+	list-style:none;	 /* 列表风格 */
+	margin:0 10px;
+	padding:0;
+}
+
+nav li{	 /* 此层级下只有这一种元素，不会混淆就可以不写全目录 */
+	display:inline-block;	 /* 列表项水平显示 */
+}
+
+nav a{
+	font-weight:800;
+	padding:15px 10px;
+}
+
+/* **************************************
+FOOTER    底部
+************************************** */
+
+footer{
+	font-size:0.75em;
+	text-align:center;
+	clear:both; /* 清除任何浮动元素 */
+	padding-top:50px;  			 /* 顶部填充 */
+	color:#ccc;
+}
+
+.social-icon{		/* 调用class */
+	width:20px;
+	height:20px;
+	margin:0 5px;
+}
+
+/* **************************************
+PAGE VEDIO   
+************************************** */
+#gallery{
+	margin:0;
+	padding:0;
+	list-style:none;		 /* 列表项前边的项目符号为无 */
+}
+
+#gallery li{
+	float:left;		 /* 浮动 */
+	width:45%;		 /* 宽度 */
+	margin:2.5%;		 /* 边距  */
+	background-color:#f5f5f5;		 /* 背景色 */
+	color:#bdc373;     
+}
+
+#gallery li a p{
+	margin:0;
+	padding:5%;
+	font-size:0.75em;
+	color:#bdc3c7;
+}
+
+/* **************************************
+COLORS   颜色
+************************************** */
+
+
+/* site body */ 
+body{
+	background-color:#fff;
+	color:#999;
+}
+/* green header */ 
+header{
+	background:#6ab47b;    /* 元素背景色 */ 
+	border-color:#599a68;  /* 元素边框颜色 */ 
+}
+/* 导航背景 */ 
+nav{
+	background:#599a68;
+}
+/* logo text */ 
+h1,h2{        /* 同时选择2个选择器用逗号隔开 */ 
+	color:#fff;     /* 颜色代码简写，相当于ffffff */ 
+}
+/* lianks */ 
+a{
+	color:#6ab47b;
+}
+
+/* nav links */ 
+nav a{
+	color:#fff;
+}
+/* selected nav links */ 
+nav a.selected,nav a:hover{       /* class用.选择元素；hover鼠标悬停显示 */ 
+	color:#32673f;
+}
+
+
+
+
