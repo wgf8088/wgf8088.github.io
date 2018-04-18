@@ -1,0 +1,34 @@
+wgf8088.github.io
+
+css   层叠样式表
+
+当前页面直接新建
+<style>
+	h1{
+		color:blue;
+	}
+</style>
+引用CSS文件
+<link rel="stylesheet" href="css/normalize.css">  <!-- 定义样式表 -->
+<link href="https://fonts.googleapis.com/css?family=Changa+One:400,400i|Open+Sans:400,400i,700,700i,800" rel="stylesheet">
+
+新建页面
+修改-页面属性-编码-UTF-8
+
+
+响应式CSS
+
+<link rel="stylesheet" href="css/responsive.css">
+
+@media screen and (min-width:480px){					/* 设备为屏幕且宽度大于480px */
+	body{
+	background:navy;
+	}
+}
+
+
+@media screen and (min-width:660px){
+	body{
+	background:darkgreen;
+	}
+}

@@ -47,6 +47,10 @@ img{
 	max-width:100%;
 }
 
+h3{
+	margin:0 0 1em 0;
+}
+
 /* **************************************
 HEADING  头部
 ************************************** */
@@ -142,6 +146,48 @@ PAGE VEDIO
 	padding:5%;
 	font-size:0.75em;
 	color:#bdc3c7;
+}
+
+/* **************************************
+PAGE ABOUT   
+************************************** */
+.profile-photo{
+	display:block;		 /* 自动边距，元素居中 */
+	max-width:150px;		 /* 最大宽度 */
+	margin:0 auto 30px;		 /* 边距 顶部 左右 底部 */
+	border-radius:20;		 /* 边框半径，圆角 */
+}
+
+/* **************************************
+PAGE CONTACT   
+************************************** */
+
+.contact-info{
+	list-style:none;
+	padding:0;
+	margin:0;
+	font-size:0.9em;
+}
+
+.contact-info a{
+	display:block;		 /* 图像占据空间 */
+	min-height:20px;		 /* 图像最小高度 */
+	background-repeat:no-repeat;		 /* 背景不重复 */
+	background-size:20px 20px;
+	padding:0 0 0 30px;
+	margin:0 0 10px;
+}
+
+.contact-info li.phone a{
+	background-image:url('../img/phone.png');		 /* 添加背景图标  ..回到上一目录，相对路径 */
+}
+
+.contact-info li.mail a{
+	background-image:url('../img/mail.png');
+}
+
+.contact-info li.www a{
+	background-image:url('../img/twitter.png');
 }
 
 /* **************************************

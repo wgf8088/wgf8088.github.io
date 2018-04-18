@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>     <!--<div></div>-->    <!--  -->  <!-- 定义文件类型 -->
 <html>          <!-- 文档结构的根 -->
 	<head>    <!-- 文档元信息 --> 
@@ -16,42 +17,25 @@
 		</a>
 		<nav>  <!-- 导航 -->
 			<ul>   <!--无序列表ul  有序列表ol  -->
-				<li><a href="index.html" class="selected">Vedio</a></li>   <!-- 列表项,class和id类似，class同页面可重复使用，id必须唯一 -->
+				<li><a href="index.html">Vedio</a></li>   <!-- 列表项,class和id类似，class同页面可重复使用，id必须唯一 -->
 				<li><a href="about.html">About</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="contact.html" class="selected">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
 	<div id="wrapper">    <!-- div封装，id名称 -->
 		<section>     <!-- 这里是画册 -->
-			<ul id="gallery">
-				<li>
-					<a href="img/numbers-01.jpg">
-						<img src="img/numbers-01.jpg" alt="">  <!-- alt图片描述 -->
-						<p>C++</p>
-					</a>
-				</li>
-				<li>
-					<a href="img/numbers-06.jpg">
-						<img src="img/numbers-06.jpg" alt="">
-						<p>Python</p>
-					</a>
-				</li>
-				<li>
-					<a href="img/numbers-09.jpg">
-						<img src="img/numbers-09.jpg" alt="">
-						<p>PHP</p>
-					</a>
-				</li>
-				<li>
-					<a href="img/numbers-12.jpg">
-						<img src="img/numbers-12.jpg" alt="">
-						<p>Java</p>
-					</a>
-				</li>
-			</ul>  
+ 			<h3>General information</h3>
+			<p>松邦专业提供减速马达、调速电机、步进电机、伺服电机、精密机械的设计制造</p>
 		</section>
-	
+		<section>     
+  			<h3>Contact Details</h3>
+			<ul class="contact-info">
+				<li class="phone"><a href="tel:8888888">88888888</a></li>     <!--  在手机上可以直接拨打电话 -->
+				<li class="mail"><a href="mailto:ot88@ot88.com">ot88@ot88.com</a></li>
+				<li class="www"><a href="http://www.ot88.com">www.ot88.com</a></li>
+			</ul>
+		</section>
 		<footer>     <!--  -->
 			<a href="http://twitter.com"><img src="img/twitter-wrap.png" alt="Twitter logo" class="social-icon"></a>
 			<a href="http://facebook.com"><img src="img/facebook-wrap.png" alt="Facebook logo" class="social-icon"></a>
