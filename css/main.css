@@ -43,7 +43,7 @@ a {
 	text-decoration:none;        /* 删除链接下划线,none无 */ 
 }
 
-img{
+img{							/* 流体图像 */
 	max-width:100%;
 }
 
