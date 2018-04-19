@@ -1,26 +1,26 @@
-wgf8088.github.io
+﻿wgf8088.github.io
 
-css   �����ʽ��
+css   层叠样式表
 
-��ǰҳ��ֱ���½�
+当前页面直接新建
 <style>
 	h1{
 		color:blue;
 	}
 </style>
-����CSS�ļ�
-<link rel="stylesheet" href="css/normalize.css">  <!-- ������ʽ�� -->
+引用CSS文件
+<link rel="stylesheet" href="css/normalize.css">  <!-- 定义样式表 -->
 <link href="https://fonts.googleapis.com/css?family=Changa+One:400,400i|Open+Sans:400,400i,700,700i,800" rel="stylesheet">
 
-�½�ҳ��
-�޸�-ҳ������-����-UTF-8
+新建页面
+修改-页面属性-编码-UTF-8
 
 
-��ӦʽCSS
+响应式CSS
 
 <link rel="stylesheet" href="css/responsive.css">
 
-@media screen and (min-width:480px){					/* �豸Ϊ��Ļ����С���ȴ���480px */
+@media screen and (min-width:480px){					/* 设备为屏幕且最小宽度大于480px */
 	body{
 	background:navy;
 	}
@@ -36,24 +36,24 @@ css   �����ʽ��
 
 
 
-�Զ���Ӧ�ֻ���Ļ���ȵķ���
+自动适应手机屏幕宽度的方法
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />  
 
  
-����ҳ��<head>������������仰����������ҳ�Ŀ����Զ���Ӧ�ֻ���Ļ�Ŀ��ȡ�
-���У�
-width=device-width ����ʾ�������豸��Ļ�Ŀ���
-initial-scale=1.0����ʾ��ʼ�����ű���
-minimum-scale=0.5����ʾ��С�����ű���
-maximum-scale=2.0����ʾ�������ű���
-user-scalable=yes����ʾ�û��Ƿ���Ե������ű���
+在网页的<head>中增加以上这句话，可以让网页的宽度自动适应手机屏幕的宽度。
+其中：
+width=device-width ：表示宽度是设备屏幕的宽度
+initial-scale=1.0：表示初始的缩放比例
+minimum-scale=0.5：表示最小的缩放比例
+maximum-scale=2.0：表示最大的缩放比例
+user-scalable=yes：表示用户是否可以调整缩放比例
  
-�������Ҫһ����ҳ�����Զ���ԭʼ������ʾ�����Ҳ������û��޸ĵĻ������ǣ�
+如果是想要一打开网页，则自动以原始比例显示，并且不允许用户修改的话，则是：
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />  
 
-������д�󣬾Ϳ��԰�һЩҳͷ����ȵ�ͼƬ�Ŀ��ȶ����ó�style="width:100%"������ҳ�����豸�Ͽ���������ȫ�����ˡ�
+这样子写后，就可以把一些页头横幅等的图片的宽度都设置成style="width:100%"，整个页面在设备上看起来就是全屏的了。
 
 
 

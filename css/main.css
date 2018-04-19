@@ -1,5 +1,6 @@
+@charset "utf-8";
 /* **************************************
-16½øÖÆÑÕÉ«ËµÃ÷
+16è¿›åˆ¶é¢œè‰²è¯´æ˜
 ************************************** */
 /* 
 0 1 2 3 4 5 6 7 8 9 a   b   c   d   e   f
@@ -7,15 +8,15 @@
 					
 #6a   b4   7b
  R     G    B
-ºìÉ« ÂÌÉ« À¶É«
-RGB ( red£¬green£¬blue )   16*16=256
+çº¢è‰² ç»¿è‰² è“è‰²
+RGB ( redï¼Œgreenï¼Œblue )   16*16=256
 
-000000ºÚÉ«   888888 »ÒÉ«     999999Òø»ÒÉ«    cccccc  ÒøÉ«     ffffff  °×É«     f5f5f5  »ÒÉ«
+000000é»‘è‰²   888888 ç°è‰²     999999é“¶ç°è‰²    cccccc  é“¶è‰²     ffffff  ç™½è‰²     f5f5f5  ç°è‰²
 
  */
 
 /* **************************************
-googleÔÚÏß×ÖÌå
+googleåœ¨çº¿å­—ä½“
 https://fonts.google.com/
 Changa One     Open Sans
 <link href="https://fonts.googleapis.com/css?family=Changa+One:400,400i|Open+Sans:400,400i,700,700i,800" rel="stylesheet">
@@ -24,7 +25,7 @@ Changa One     Open Sans
 
 
 /* **************************************
-GENERAL Í¨ÓÃ
+GENERAL é€šç”¨
 ************************************** */
 
 body{
@@ -32,18 +33,18 @@ body{
 }
 
 
-#wrapper{              /* ¶¨Î»divÔªËØ */ 
-	max-width:940px;    /* ÔªËØ×î´ó¿í¶È */ 
-	margin:0 auto;       /* ÔªËØµÄ±ß¾à£¬0ÉÏÏÂ±ß¾à£¬auto×Ô¶¯,Ìî³ä×óÓÒµÄ¿Õ¼ä */ 
-	/* background:orange;    /* ÔªËØ±³¾°É« */ 
-	padding:0 5%          /* Ìî³ä£¬0ÊÇÉÏÏÂ£¬5%ÊÇ×óÓÒ */
+#wrapper{              /* å®šä½divå…ƒç´  */ 
+	max-width:940px;    /* å…ƒç´ æœ€å¤§å®½åº¦ */ 
+	margin:0 auto;       /* å…ƒç´ çš„è¾¹è·ï¼Œ0ä¸Šä¸‹è¾¹è·ï¼Œautoè‡ªåŠ¨,å¡«å……å·¦å³çš„ç©ºé—´ */ 
+	/* background:orange;    /* å…ƒç´ èƒŒæ™¯è‰² */ 
+	padding:0 5%          /* å¡«å……ï¼Œ0æ˜¯ä¸Šä¸‹ï¼Œ5%æ˜¯å·¦å³ */
 }
 
 a {
-	text-decoration:none;        /* É¾³ıÁ´½ÓÏÂ»®Ïß,noneÎŞ */ 
+	text-decoration:none;        /* åˆ é™¤é“¾æ¥ä¸‹åˆ’çº¿,noneæ—  */ 
 }
 
-img{							/* Á÷ÌåÍ¼Ïñ */
+img{							/* æµä½“å›¾åƒ */
 	max-width:100%;
 }
 
@@ -52,53 +53,53 @@ h3{
 }
 
 /* **************************************
-HEADING  Í·²¿
+HEADING  å¤´éƒ¨
 ************************************** */
 
 header{
 	float:left;
-	margin:0 0 30px 0;		 /* ¶¥²¿ ÓÒ  µ×²¿ ×ó£»´Ó¶¥²¿¿ªÊ¼Ë³Ê±Õë×ª */
+	margin:0 0 30px 0;		 /* é¡¶éƒ¨ å³  åº•éƒ¨ å·¦ï¼›ä»é¡¶éƒ¨å¼€å§‹é¡ºæ—¶é’ˆè½¬ */
 	padding:5px 0 0 0;
 	width:100%;
 }
 
 
-#logo{			/* µ÷ÓÃid */
-	text-align:center;   /* ÎÄ±¾¾ÓÖĞ */
-	margin:0;            /* ÉÏÏÂ×óÓÒ±ß¾àÎª0 */
+#logo{			/* è°ƒç”¨id */
+	text-align:center;   /* æ–‡æœ¬å±…ä¸­ */
+	margin:0;            /* ä¸Šä¸‹å·¦å³è¾¹è·ä¸º0 */
 }
 h1{
-	font-family:'changa one',sans-serif;        /* ÉèÖÃ×ÖÌåÑùÊ½ */
-	margin:15px 0;                      /* ÉèÖÃ×ÖÌå±ß¾à */
-	font-size:1.75em;           /* ÉèÖÃ×ÖÌå´óĞ¡£¬1emµÈÓÚä¯ÀÀÆ÷Ä¬ÈÏ×ÖÌå´óĞ¡£¬Ïàµ±ÓÚ16px£»»áËæä¯ÀÀÆ÷Ëõ·Å´óĞ¡ */
-	font-weight:normal;			 /* ÉèÖÃ×ÖÌåÖØÁ¿£¬normal */
-	line-height:0.8em;			 /* ÉèÖÃĞĞ¸ß */
+	font-family:'changa one',sans-serif;        /* è®¾ç½®å­—ä½“æ ·å¼ */
+	margin:15px 0;                      /* è®¾ç½®å­—ä½“è¾¹è· */
+	font-size:1.75em;           /* è®¾ç½®å­—ä½“å¤§å°ï¼Œ1emç­‰äºæµè§ˆå™¨é»˜è®¤å­—ä½“å¤§å°ï¼Œç›¸å½“äº16pxï¼›ä¼šéšæµè§ˆå™¨ç¼©æ”¾å¤§å° */
+	font-weight:normal;			 /* è®¾ç½®å­—ä½“é‡é‡ï¼Œnormal */
+	line-height:0.8em;			 /* è®¾ç½®è¡Œé«˜ */
 }
 
 h2{
 	font-size:0.75em;
-	margin:-5px 0 0;		/* ÉèÖÃ×ÖÌå±ß¾à,-5¶¥²¿±ß¾à»á±äĞ¡£¬ÉÏÏÂ£¬×óÓÒ */
+	margin:-5px 0 0;		/* è®¾ç½®å­—ä½“è¾¹è·,-5é¡¶éƒ¨è¾¹è·ä¼šå˜å°ï¼Œä¸Šä¸‹ï¼Œå·¦å³ */
 	font-weight:normal;
 }
 
 /* **************************************
-NAVGATION   µ¼º½
+NAVGATION   å¯¼èˆª
 ************************************** */
 
 nav{
 	text-align:center;
-	padding:10px 0;			 /* Ìî³ä ÉÏÏÂ ×óÓÒ */
+	padding:10px 0;			 /* å¡«å…… ä¸Šä¸‹ å·¦å³ */
 	margin:20px 0 0;
 }
 
 nav ul{
-	list-style:none;	 /* ÁĞ±í·ç¸ñ */
+	list-style:none;	 /* åˆ—è¡¨é£æ ¼ */
 	margin:0 10px;
 	padding:0;
 }
 
-nav li{	 /* ´Ë²ã¼¶ÏÂÖ»ÓĞÕâÒ»ÖÖÔªËØ£¬²»»á»ìÏı¾Í¿ÉÒÔ²»Ğ´È«Ä¿Â¼ */
-	display:inline-block;	 /* ÁĞ±íÏîË®Æ½ÏÔÊ¾ */
+nav li{	 /* æ­¤å±‚çº§ä¸‹åªæœ‰è¿™ä¸€ç§å…ƒç´ ï¼Œä¸ä¼šæ··æ·†å°±å¯ä»¥ä¸å†™å…¨ç›®å½• */
+	display:inline-block;	 /* åˆ—è¡¨é¡¹æ°´å¹³æ˜¾ç¤º */
 }
 
 nav a{
@@ -107,18 +108,18 @@ nav a{
 }
 
 /* **************************************
-FOOTER    µ×²¿
+FOOTER    åº•éƒ¨
 ************************************** */
 
 footer{
 	font-size:0.75em;
 	text-align:center;
-	clear:both; /* Çå³ıÈÎºÎ¸¡¶¯ÔªËØ */
-	padding-top:50px;  			 /* ¶¥²¿Ìî³ä */
+	clear:both; /* æ¸…é™¤ä»»ä½•æµ®åŠ¨å…ƒç´  */
+	padding-top:50px;  			 /* é¡¶éƒ¨å¡«å…… */
 	color:#ccc;
 }
 
-.social-icon{		/* µ÷ÓÃclass */
+.social-icon{		/* è°ƒç”¨class */
 	width:20px;
 	height:20px;
 	margin:0 5px;
@@ -130,14 +131,14 @@ PAGE VEDIO
 #gallery{
 	margin:0;
 	padding:0;
-	list-style:none;		 /* ÁĞ±íÏîÇ°±ßµÄÏîÄ¿·ûºÅÎªÎŞ */
+	list-style:none;		 /* åˆ—è¡¨é¡¹å‰è¾¹çš„é¡¹ç›®ç¬¦å·ä¸ºæ—  */
 }
 
 #gallery li{
-	float:left;		 /* ¸¡¶¯ */
-	width:45%;		 /* ¿í¶È */
-	margin:2.5%;		 /* ±ß¾à  */
-	background-color:#f5f5f5;		 /* ±³¾°É« */
+	float:left;		 /* æµ®åŠ¨ */
+	width:45%;		 /* å®½åº¦ */
+	margin:2.5%;		 /* è¾¹è·  */
+	background-color:#f5f5f5;		 /* èƒŒæ™¯è‰² */
 	color:#bdc373;     
 }
 
@@ -152,10 +153,10 @@ PAGE VEDIO
 PAGE ABOUT   
 ************************************** */
 .profile-photo{
-	display:block;		 /* ×Ô¶¯±ß¾à£¬ÔªËØ¾ÓÖĞ */
-	max-width:150px;		 /* ×î´ó¿í¶È */
-	margin:0 auto 30px;		 /* ±ß¾à ¶¥²¿ ×óÓÒ µ×²¿ */
-	border-radius:20;		 /* ±ß¿ò°ë¾¶£¬Ô²½Ç */
+	display:block;		 /* è‡ªåŠ¨è¾¹è·ï¼Œå…ƒç´ å±…ä¸­ */
+	max-width:150px;		 /* æœ€å¤§å®½åº¦ */
+	margin:0 auto 30px;		 /* è¾¹è· é¡¶éƒ¨ å·¦å³ åº•éƒ¨ */
+	border-radius:20;		 /* è¾¹æ¡†åŠå¾„ï¼Œåœ†è§’ */
 }
 
 /* **************************************
@@ -170,16 +171,16 @@ PAGE CONTACT
 }
 
 .contact-info a{
-	display:block;		 /* Í¼ÏñÕ¼¾İ¿Õ¼ä */
-	min-height:20px;		 /* Í¼Ïñ×îĞ¡¸ß¶È */
-	background-repeat:no-repeat;		 /* ±³¾°²»ÖØ¸´ */
+	display:block;		 /* å›¾åƒå æ®ç©ºé—´ */
+	min-height:20px;		 /* å›¾åƒæœ€å°é«˜åº¦ */
+	background-repeat:no-repeat;		 /* èƒŒæ™¯ä¸é‡å¤ */
 	background-size:20px 20px;
 	padding:0 0 0 30px;
 	margin:0 0 10px;
 }
 
 .contact-info li.phone a{
-	background-image:url('../img/phone.png');		 /* Ìí¼Ó±³¾°Í¼±ê  ..»Øµ½ÉÏÒ»Ä¿Â¼£¬Ïà¶ÔÂ·¾¶ */
+	background-image:url('../img/phone.png');		 /* æ·»åŠ èƒŒæ™¯å›¾æ ‡  ..å›åˆ°ä¸Šä¸€ç›®å½•ï¼Œç›¸å¯¹è·¯å¾„ */
 }
 
 .contact-info li.mail a{
@@ -191,7 +192,7 @@ PAGE CONTACT
 }
 
 /* **************************************
-COLORS   ÑÕÉ«
+COLORS   é¢œè‰²
 ************************************** */
 
 
@@ -202,16 +203,16 @@ body{
 }
 /* green header */ 
 header{
-	background:#6ab47b;    /* ÔªËØ±³¾°É« */ 
-	border-color:#599a68;  /* ÔªËØ±ß¿òÑÕÉ« */ 
+	background:#6ab47b;    /* å…ƒç´ èƒŒæ™¯è‰² */ 
+	border-color:#599a68;  /* å…ƒç´ è¾¹æ¡†é¢œè‰² */ 
 }
-/* µ¼º½±³¾° */ 
+/* å¯¼èˆªèƒŒæ™¯ */ 
 nav{
 	background:#599a68;
 }
 /* logo text */ 
-h1,h2{        /* Í¬Ê±Ñ¡Ôñ2¸öÑ¡ÔñÆ÷ÓÃ¶ººÅ¸ô¿ª */ 
-	color:#fff;     /* ÑÕÉ«´úÂë¼òĞ´£¬Ïàµ±ÓÚffffff */ 
+h1,h2{        /* åŒæ—¶é€‰æ‹©2ä¸ªé€‰æ‹©å™¨ç”¨é€—å·éš”å¼€ */ 
+	color:#fff;     /* é¢œè‰²ä»£ç ç®€å†™ï¼Œç›¸å½“äºffffff */ 
 }
 /* lianks */ 
 a{
@@ -223,7 +224,7 @@ nav a{
 	color:#fff;
 }
 /* selected nav links */ 
-nav a.selected,nav a:hover{       /* classÓÃ.Ñ¡ÔñÔªËØ£»hoverÊó±êĞüÍ£ÏÔÊ¾ */ 
+nav a.selected,nav a:hover{       /* classç”¨.é€‰æ‹©å…ƒç´ ï¼›hoveré¼ æ ‡æ‚¬åœæ˜¾ç¤º */ 
 	color:#32673f;
 }
 
